@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1,  maximum-scale=1, minimum-scale=1, user-scalable=no">
+        <title>Lego Builder</title>
+        <link rel="stylesheet" href="style.css" type="text/css"> 
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+        <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+        <link rel="manifest" href="scripts/site.webmanifest">
+        <script defer src="scripts/app.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <article>
+	    <section id="landing">
+		<div class="landing_container">
+            <a href=#byebye>
+                <p>ABOUT</p>
+            </a>
+            <div id="landing_image_container">
+                <div id="landing_image"></div>
+                <div id="title_block">
+                    <h1>George builds Lego</h1>
+           	        <h2>乔治建造乐高</h2>
+                    <a href="#choice">
+                        <div class="down"></div>
+			        </a>
+                </div>
+            </div>
+		</div>
+        </section>
+        <section id="choice">
+            <div id="choice_container">
+                 <div class="subtitle">
+                     <h3>Choose a build</h3>
+                </div>
+                <div id="choice_content">
+                    <a href="#dumper">
+                        <div id="dumper_anim"></div>
+                    </a>
+                    <a href="#pickup">
+                        <div id="pickup_anim"></div>
+                    </a>
+                    <a href="#tree">
+                        <div id="tree_anim"></div>
+                    </a>
+                    <a href="#robot">
+                        <div id="robot_anim"></div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="dumper">
+            <div class="container">
+                <div class="subtitle">
+                    <h2>Dumper Truck</h2>
+                </div>
+                <div class="landscape_subtitle">
+                    <div class="message">Let's build a dumper truck!</div> 
+                </div>
+                <div class="content">
+                    <div class="left_pane">
+                     	<div class="landscape_left" onClick="shuffleSprites('backward', 'dumper')"></div>
+                    </div>
+                    <div class="centre_pane">
+                        <div class="player"></div>
+                        <div class="controls"> 
+                     	    <div class="left" onClick="shuffleSprites('backward', 'dumper')"></div>
+			                <div class="counter">1</div>
+                           	<div class="right" onClick="shuffleSprites('forward', 'dumper')"></div>
+                        </div>
+                    </div>
+                    <div class="right_pane">
+                        <div class="landscape_right" onClick="shuffleSprites('forward', 'dumper')"></div>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="message">Let's build a dumper truck!</div>
+                </div>
+            </div>
+        </section>
+        <section id="pickup">
+            <div class="container">
+                <div class="subtitle">
+                    <h2>Pickup Truck</h2>
+                </div>
+                <div class="landscape_subtitle">
+                    <div class="message">Let's build a pickup truck!</div> 
+                </div>
+                <div class="content">
+                    <div class="left_pane">
+                     	<div class="landscape_left" onClick="shuffleSprites('backward', 'pickup')"></div>
+                    </div>
+                    <div class="centre_pane">
+                        <div class="player"></div>
+ 		    	        <div class="controls">
+				            <div class="left" onClick="shuffleSprites('backward', 'pickup')"></div>
+				            <div class="counter">1</div>
+				            <div class="right" onClick="shuffleSprites('forward', 'pickup')"></div>
+                        </div>
+                    </div>
+                    <div class="right_pane">
+                        <div class="landscape_right" onClick="shuffleSprites('forward', 'pickup')"></div>
+                    </div>
+		        </div>
+                <div class="footer">
+                    <div class="message">Let's build a pickup truck!</div>
+                </div>
+            </div>
+        </section>
+        <section id="tree">
+            <div class="container">
+                <div class="subtitle">
+                    <h2>Green Tree</h2>
+                </div>
+                <div class="landscape_subtitle">
+                    <div class="message">Let's build a green tree!</div> 
+                </div>
+                <div class="content">
+                    <div class="left_pane">
+                     	<div class="landscape_left" onClick="shuffleSprites('backward', 'tree')"></div>
+                    </div>
+                    <div class="centre_pane">
+                        <div class="player"></div>
+                        <div class="controls">
+				            <div class="left" onClick="shuffleSprites('backward', 'tree')"></div>
+                      	    <div class="counter">1</div>
+				            <div class="right" onClick="shuffleSprites('forward', 'tree')"></div>
+                        </div>
+                    </div>
+                    <div class="right_pane">
+                        <div class="landscape_right" onClick="shuffleSprites('forward', 'tree')"></div>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="message">Let's build a green tree!</div>
+                </div>
+            </div>
+        </section>
+        <section id="robot">
+            <div class="container">
+                <div class="subtitle">
+                    <h2>Red Robot</h2>
+                </div>
+                <div class="landscape_subtitle">
+                    <div class="message">Let's build a red robot!</div> 
+                </div>
+                <div class="content">
+                    <div class="left_pane">
+                     	<div class="landscape_left" onClick="shuffleSprites('backward', 'robot')"></div>
+                    </div>
+                    <div class="centre_pane">
+                        <div class="player"></div>
+        	            <div class="controls"> 
+				            <div class="left" onClick="shuffleSprites('backward', 'robot')"></div>
+	                        <div class="counter">1</div>
+				            <div class="right" onClick="shuffleSprites('forward', 'robot')"></div>
+                        </div>
+                    </div>
+                    <div class="right_pane">
+                        <div class="landscape_right" onClick="shuffleSprites('forward', 'robot')"></div>
+                    </div>
+		        </div>
+                <div class="footer">
+                    <div class="message">Let's build a red robot!</div>
+                </div>
+            </div>
+        </section>
+        <section id="byebye">
+		    <div class="landing_container">
+                <h3>For George<h3>
+                <h3>Made with</h3>
+			    <h1>...   ... <br>
+                ..... ..... <br>
+                .......... <br>
+                ........ <br>
+                ...... <br>
+                .... <br>
+				.. <br></h1>
+		        <h3>In Beijing, 2020</h3>
+		    </div>
+        </section>
+        </article>
+    </body>
+</html>
